@@ -1,0 +1,177 @@
+html{
+    background-color:  rgb(81, 129, 101);
+    color:  orange;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+#home{
+min-height: 100vh;
+width: 100%;
+position: relative;
+}
+ nav{
+    display: flex;
+    padding: 8px 6px;
+    justify-content: space-between;
+}
+.navlinks{
+    flex: 1;
+    text-align: center;
+    position:absolute;
+    
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+    margin-right: 18px;
+}
+.navlinks ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navlinks ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.7s ease;
+}
+.navlinks ul li :hover::after{
+    width: 100%;
+}
+.textbox{
+    text-align: center;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.textbox h1{
+    font-size: 30px;
+    color: green;
+}
+.visit{
+    font-size: 16px;
+    color: skyblue;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+}
+#about{
+    background-attachment: fixed; 
+    min-height: 100vh;
+    width: 100%;
+}
+.heading{
+text-align: center;
+margin-top: 8px;
+}
+.heading h1{
+    font-size: 50px;
+    color: orangered;
+    margin-top: 4px;
+}
+.heading p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.about-us{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.about-us img{
+    max-width: 50%;
+    flex: 0 50%;
+    height: auto;
+}
+.content{
+    padding: 35px;
+}
+.content h2{
+    font-size: 30px;
+    color: cyan;
+    margin: 15px 0px;
+}
+.content p{
+    color: orange;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 15px 0px;
+}
+@media screen and (max-width: 768px) {
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .content{
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+#services{
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.row{
+    padding-top: 50px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    align-items: center;
+    margin: auto;
+    width: 320px;
+    height: 500px;
+    background: orange;
+    border-radius: 20px;
+}
+.box img{
+    width: 250px;
+    border-radius: 50%;
+}
+.box h3{
+    font-size: 25px;
+    padding-top: 20px;
+    color: aqua;
+}
+.box p{
+    font-family: sans-serif;
+    color: maroon;
+    line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+    .row{
+        width: 50%;
+        flex-direction: column;
+        margin-top: 8px;
+    }    
+}
