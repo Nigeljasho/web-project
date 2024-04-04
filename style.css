@@ -174,8 +174,14 @@ margin-top: 8px;
         flex-direction: column;
         margin-top: 8px;
         align-items: center;
+        
     } 
     .box{
         margin-top: 10px;
+    }
+    #services{
+    align-items: center;
+        text-align: center;
+        
     }
 }
