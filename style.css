@@ -173,5 +173,9 @@ margin-top: 8px;
         width: 50%;
         flex-direction: column;
         margin-top: 8px;
-    }    
+    } 
+    .box{
+        align items: center;
+        margin-top: 10px;
+    }
 }
